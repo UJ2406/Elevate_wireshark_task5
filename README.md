@@ -115,8 +115,11 @@ wireshark-analysis-task5/
 ├── README.md               # This file
 ├── wshk.pcap               # Saved Wireshark capture
 ├── screenshot/             # Images of the task
-│ ├── 
-│ ├── 
-│ └── 
-├── findings.txt            # Summary of protocol findings
+  ├── installation.png
+  ├── settinguser.png
+  └── mainmenu.png
+  └── dnsfilter.png
+  └── httpfilter.png
+  └── tcpfilter.png
+├── finding.txt            # Summary of protocol findings
 ```
