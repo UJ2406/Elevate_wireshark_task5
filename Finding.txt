@@ -1,0 +1,42 @@
+Findings 
+===============================================
+
+A live packet capture was performed on Kali Linux using Wireshark.
+Basic network activity was generated (browser, ping) and filtered using protocol-specific filters.
+Three primary protocols—TCP, DNS, and HTTP—were identified and analyzed.
+
+Protocols Detected:
+-------------------
+
+1. TCP (Transmission Control Protocol)
+   - Found by filter: tcp
+   - Example frames: 410, 411 (SYN, ACK, handshake)
+   - Description: Reliable connection-oriented transport protocol. Used by most internet communication (web, file transfer, etc).
+
+2. DNS (Domain Name System)
+   - Found by filter: dns
+   - Example frames: 0–17 (standard queries/responses)
+   - Description: Resolves human-readable domain names (e.g., google.com) to IP addresses. Observed queries for multiple domains.
+
+3. HTTP (Hypertext Transfer Protocol)
+   - Found by filter: http
+   - Example frames: 412, 414, 1496, 1498 (GET requests, responses)
+   - Description: Web traffic protocol. Gets/returns web pages from server to client. Plaintext unless combined with SSL/TLS.
+
+Analysis Snapshots:
+-------------------
+  - Screenshots included to validate the presence of each protocol and to demonstrate filter effectiveness.
+
+Other Observations:
+-------------------
+  - DNS requests were automatically triggered by browser/network apps.
+  - TCP sessions showed classic SYN/ACK handshake details.
+  - HTTP requests displayed header and content data in plaintext for GET and response packets.
+
+Key Learnings:
+--------------
+- Filtering by protocol reveals different layers of network activity.
+- Capture setup and test traffic are essential for visible results.
+- Wireshark is a crucial tool for OPS, SOC, forensic analysts, and network troubleshooters.
+
+End of findings.
