@@ -1,4 +1,4 @@
-# 📡 Wireshark Network Traffic Analysis (Task 5)
+# Wireshark Network Traffic Analysis (Task 5)
 
 ## 📋 Task Overview
 Captured and analyzed live network packets using Wireshark on Kali Linux, filtered by protocol, and documented different types of network traffic.
